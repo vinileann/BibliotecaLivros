@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Biblioteca de Livros</title>
+</head>
+<body>
+    <h1>Minha Biblioteca</h1>
+    <div class="adicao" id="adicao">
+        <h2>Adicione um livro</h2>
+        <form id="formulario">
+            <input type="text" id="title" name="title" placeholder="Titulo" required/>
+            <input type="text"  id="author" name="author" placeholder="Autor" required/>
+            <input type="number"  id="pages" name="pages" placeholder="Numero de Paginas" required/>
+            <div class="swith-container">
+                <label for="opcao">Você leu o livro?</label>
+                <label class="switch">
+                    <input type="checkbox" id="read" name="read">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button id="add" type="submit">Adicione</button>
+        </form>
+    </div>
+    <div id="allcards" class="card-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
